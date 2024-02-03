@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root{
+    --bg-principal: #14161C;
+    --font-principal: 'Inter', sans-serif;
+}
+
+
+body{
+    background-color: var(--bg-principal);
+}
+
+.logoWordle__w{
+    font-family: var(--font-principal);
+}
+
+.logoWordle{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cabecalho{
+    border-bottom: 1px solid #fff;
+    padding: 15px 0 14px 71px;
+}
+
+.console{
+    /* Cor para erro:
+    Preencha todos os campos,
+    Palavra não está na lista 
+    */
+    /* color: #5F0F1D;
+    background-color: #ba4646; */
+
+    /* Cor para acerto:
+    You guessed right! Game over!
+    */
+    /* color: #2b5028;
+    background-color: #538d4e; */
+
+    /* Cor para aviso:
+    Word not in database
+    */
+    /* color: #7d6b15;
+    background-color: #b59f3b; */
+    
+    color: var(--bg-principal);
+    font-family: var(--font-principal);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 25px;
+    font-size: 16px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.quadrado{
+    width: 62px;
+    height: 62px;
+    border: 1px solid #585858;
+    margin: 2px;
+}
+
+.boardWord__linha{
+    display: flex;
+}
+
+.teclado{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #fff;
+    font-family: var(--font-principal);
+}
+
+.teclado__linha{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.teclado__tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #818384;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.teclado__letras{
+    font-size: 22px;
+}
+
+.teclado__apagar{
+    font-size: 22px;
+}

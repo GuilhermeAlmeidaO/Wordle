@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="cabecalho">
@@ -12,6 +14,88 @@
             <span class="logoWordle__w">W</span>
         </div>
     </header>
-    <main></main>
+    <main class="content">
+        <div class="console">
+            <span id="console__mensagem">
+                 
+            </span>
+        </div>
+        <div class="boardWord">
+            <div class="boardWord__linha1 boardWord__linha">
+                <div class="boardWord__linha1__letras quadrado"></div>
+                <div class="boardWord__linha1__letras quadrado"></div>
+                <div class="boardWord__linha1__letras quadrado"></div>
+                <div class="boardWord__linha1__letras quadrado"></div>
+                <div class="boardWord__linha1__letras quadrado"></div>
+            </div>
+            <div class="boardWord__linha2 boardWord__linha">
+                <div class="boardWord__linha2__letras quadrado"></div>
+                <div class="boardWord__linha2__letras quadrado"></div>
+                <div class="boardWord__linha2__letras quadrado"></div>
+                <div class="boardWord__linha2__letras quadrado"></div>
+                <div class="boardWord__linha2__letras quadrado"></div>
+            </div>
+            <div class="boardWord__linha3 boardWord__linha">
+                <div class="boardWord__linha3__letras quadrado"></div>
+                <div class="boardWord__linha3__letras quadrado"></div>
+                <div class="boardWord__linha3__letras quadrado"></div>
+                <div class="boardWord__linha3__letras quadrado"></div>
+                <div class="boardWord__linha3__letras quadrado"></div>
+            </div>
+            <div class="boardWord__linha4 boardWord__linha">
+                <div class="boardWord__linha4__letras quadrado"></div>
+                <div class="boardWord__linha4__letras quadrado"></div>
+                <div class="boardWord__linha4__letras quadrado"></div>
+                <div class="boardWord__linha4__letras quadrado"></div>
+                <div class="boardWord__linha4__letras quadrado"></div>
+            </div>
+            <div class="boardWord__linha5 boardWord__linha">
+                <div class="boardWord__linha5__letras quadrado"></div>
+                <div class="boardWord__linha5__letras quadrado"></div>
+                <div class="boardWord__linha5__letras quadrado"></div>
+                <div class="boardWord__linha5__letras quadrado"></div>
+                <div class="boardWord__linha5__letras quadrado"></div>
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado__linha1 teclado__linha">
+                <div id="keyQ" class="teclado__letras teclado__tecla">Q</div>
+                <div id="keyW" class="teclado__letras teclado__tecla">W</div>
+                <div id="keyE" class="teclado__letras teclado__tecla">E</div>
+                <div id="keyR" class="teclado__letras teclado__tecla">R</div>
+                <div id="keyT" class="teclado__letras teclado__tecla">T</div>
+                <div id="keyY" class="teclado__letras teclado__tecla">Y</div>
+                <div id="keyU" class="teclado__letras teclado__tecla">U</div>
+                <div id="keyI" class="teclado__letras teclado__tecla">I</div>
+                <div id="keyO" class="teclado__letras teclado__tecla">O</div>
+                <div id="keyP" class="teclado__letras teclado__tecla">P</div>
+            </div>
+            <div class="teclado__linha2 teclado__linha">
+                <div id="keyA" class="teclado__letras teclado__tecla">A</div>
+                <div id="keyS" class="teclado__letras teclado__tecla">S</div>
+                <div id="keyD" class="teclado__letras teclado__tecla">D</div>
+                <div id="keyF" class="teclado__letras teclado__tecla">F</div>
+                <div id="keyG" class="teclado__letras teclado__tecla">G</div>
+                <div id="keyH" class="teclado__letras teclado__tecla">H</div>
+                <div id="keyJ" class="teclado__letras teclado__tecla">J</div>
+                <div id="keyK" class="teclado__letras teclado__tecla">K</div>
+                <div id="keyL" class="teclado__letras teclado__tecla">L</div>
+            </div>
+            <div class="teclado__linha3 teclado__linha">
+                <div id="keyEnter" class="teclado__enter teclado__tecla">ENTER</div>
+                <div id="keyZ" class="teclado__letras teclado__tecla">Z</div>
+                <div id="keyX" class="teclado__letras teclado__tecla">X</div>
+                <div id="keyC" class="teclado__letras teclado__tecla">C</div>
+                <div id="keyV" class="teclado__letras teclado__tecla">V</div>
+                <div id="keyB" class="teclado__letras teclado__tecla">B</div>
+                <div id="keyN" class="teclado__letras teclado__tecla">N</div>
+                <div id="keyM" class="teclado__letras teclado__tecla">M</div>
+                <div id="keyApagar" class="teclado__apagar teclado__tecla">
+                    <i class="fa-solid fa-delete-left"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>
